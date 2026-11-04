@@ -16,7 +16,7 @@ It fetches normal HTTP/HTTPS URLs through a three-hop exit circuit and v3
 Install:
 
 ```bash
-cd python
+cd torv3py
 python3.14 -m venv .venv
 . .venv/bin/activate
 pip install -e .
