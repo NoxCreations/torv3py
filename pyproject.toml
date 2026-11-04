@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "torv3"
+version = "1.0.0"
+description = "Native Tor v3 client: clearnet and onion requests without tor, SOCKS, or a proxy"
+readme = "README.md"
+requires-python = ">=3.14"
+license = { text = "MIT" }
+dependencies = ["cryptography>=44"]
+
+[project.scripts]
+torv3 = "torv3.__main__:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["torv3"]
